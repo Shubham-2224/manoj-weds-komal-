@@ -19,7 +19,7 @@ const milestones = [
   },
   {
     title: "The Engagement Ceremony",
-    date: "27 June",
+    date: "26 June",
     description: "Surrounded by our loved ones, our union was officially blessed and our beautiful journey together began.",
     icon: <Sparkles size={24} className="text-white" />,
     align: "left",

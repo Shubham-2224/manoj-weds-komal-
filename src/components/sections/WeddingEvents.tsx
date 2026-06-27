@@ -23,7 +23,7 @@ const events = [
     title: "Haldi",
     date: "6 June 2026",
     time: "5:00 PM",
-    venue: "The Residence",
+    venue: "Balaji Lawns, Ranjangaon, Chhatrapati Sambhaji Nagar",
     themeClass: "bg-yellow-500/10 border-yellow-500/30 text-yellow-700",
     iconColor: "text-yellow-600",
   },

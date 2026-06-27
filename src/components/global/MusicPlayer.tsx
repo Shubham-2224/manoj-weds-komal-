@@ -7,6 +7,9 @@ export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.2; // light volume
+    }
     const playAudio = async () => {
       try {
         if (audioRef.current) {
@@ -33,8 +36,8 @@ export default function MusicPlayer() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      {/* Ensure the music file is named 'apna-bana-le-piya.mp3' and placed in public/music/ */}
-      <audio ref={audioRef} loop src="/music/apna-bana-le-piya.mp3" />
+      {/* Ensure the music file is placed in public/music/ */}
+      <audio ref={audioRef} loop src="/music/apna-bana-le-piya.mp4" />
       <button
         onClick={togglePlay}
         className="bg-primary/90 text-white p-3 rounded-full shadow-lg hover:bg-primary transition-all duration-300 hover:scale-110 flex items-center justify-center backdrop-blur-md"

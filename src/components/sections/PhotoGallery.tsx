@@ -9,7 +9,6 @@ const photos = [
   { src: "/images/media__1782575637790.jpg", width: 800, height: 1200 },
   { src: "/images/media__1782575637944.jpg", width: 800, height: 1200 },
   { src: "/images/media__1782575638043.jpg", width: 800, height: 1200 },
-  { src: "/images/media__1782575638080.jpg", width: 800, height: 1200 },
 ];
 
 export default function PhotoGallery() {

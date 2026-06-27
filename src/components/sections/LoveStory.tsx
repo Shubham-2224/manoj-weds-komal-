@@ -5,21 +5,21 @@ import { Heart, MessageCircle, CalendarHeart, Sparkles } from "lucide-react";
 const milestones = [
   {
     title: "When Our Families Met",
-    date: "10 May 2026",
+    date: "2 June",
     description: "Two families came together with hopes of a beautiful union. It was the beginning of a lifelong bond.",
     icon: <Heart size={24} className="text-white" />,
     align: "left",
   },
   {
     title: "Our First Meeting",
-    date: "15 May 2026",
+    date: "18 June",
     description: "We sat down for our first conversation. What started as a formal meeting quickly turned into a genuine connection.",
     icon: <MessageCircle size={24} className="text-white" />,
     align: "right",
   },
   {
-    title: "The Roka Ceremony",
-    date: "25 May 2026",
+    title: "The Engagement Ceremony",
+    date: "27 June",
     description: "Surrounded by our loved ones, our union was officially blessed and our beautiful journey together began.",
     icon: <Sparkles size={24} className="text-white" />,
     align: "left",

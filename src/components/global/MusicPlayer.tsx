@@ -8,19 +8,40 @@ export default function MusicPlayer() {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.2; // light volume
+      audioRef.current.volume = 0.2;
     }
-    const playAudio = async () => {
+
+    const tryPlay = async () => {
       try {
-        if (audioRef.current) {
+        if (audioRef.current && audioRef.current.paused) {
           await audioRef.current.play();
           setIsPlaying(true);
         }
       } catch (error) {
-        console.log("Auto-play prevented by browser. User interaction required.");
+        // Autoplay blocked, wait for user interaction
       }
     };
-    playAudio();
+
+    // Try immediately
+    tryPlay();
+
+    // Fallback: try on first user interaction
+    const handleInteraction = () => {
+      tryPlay();
+      document.removeEventListener("click", handleInteraction);
+      document.removeEventListener("touchstart", handleInteraction);
+      document.removeEventListener("scroll", handleInteraction);
+    };
+
+    document.addEventListener("click", handleInteraction);
+    document.addEventListener("touchstart", handleInteraction);
+    document.addEventListener("scroll", handleInteraction, { once: true });
+
+    return () => {
+      document.removeEventListener("click", handleInteraction);
+      document.removeEventListener("touchstart", handleInteraction);
+      document.removeEventListener("scroll", handleInteraction);
+    };
   }, []);
 
   const togglePlay = () => {

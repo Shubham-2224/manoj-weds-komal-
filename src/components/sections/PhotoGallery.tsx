@@ -6,7 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 
 const photos = [
   { src: "/images/media__1782575638080.jpg", width: 800, height: 1200 },
-  { src: "/images/media__1782575637790.jpg", width: 800, height: 1200 },
+  { src: "/images/media__1782575637049.jpg", width: 1200, height: 800 },
   { src: "/images/media__1782575637944.jpg", width: 800, height: 1200 },
   { src: "/images/media__1782575638043.jpg", width: 800, height: 1200 },
 ];

@@ -19,6 +19,23 @@ export default function Footer() {
         <p className="font-poppins text-wedding-text/60 text-sm tracking-widest uppercase flex items-center gap-2 justify-center">
           Made with <Heart size={14} className="text-accent fill-accent" /> for Manoj & Komal
         </p>
+
+        <div className="mt-16 pt-8 border-t border-primary/20 w-full text-center space-y-3">
+          <p className="font-poppins text-[11px] md:text-xs text-primary/80 uppercase tracking-[0.2em] font-semibold">
+            Customize your wedding website with us
+          </p>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6 font-poppins text-xs text-wedding-text/50">
+            <span>Developed by <span className="font-medium text-wedding-text/70">Shubham Desai</span></span>
+            <span className="hidden md:inline opacity-50">•</span>
+            <a href="tel:7219429987" className="hover:text-primary transition-colors flex items-center gap-1">
+              <Phone size={12} /> 7219429987
+            </a>
+            <span className="hidden md:inline opacity-50">•</span>
+            <a href="https://instagram.com/shubham.d_18" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Insta: @shubham.d_18
+            </a>
+          </div>
+        </div>
         
       </div>
     </footer>

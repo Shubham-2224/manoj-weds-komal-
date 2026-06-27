@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/images/media__1782575637944.jpg')",
+          backgroundImage: "url('/images/media__1782575637049.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top center",
           backgroundAttachment: "fixed" // Parallax effect
